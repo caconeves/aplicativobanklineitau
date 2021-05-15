@@ -52,3 +52,21 @@ const validacao = () => {
         document.getElementById('error').style.display = 'block';
     }
 }
+
+const fMasc = (objeto, mascara) => {
+    obj=objeto;
+    masc=mascara;
+    setTimeout('fMascEx()',1)
+}
+
+const fMascEx = () => {
+    obj.value=masc(obj.value);
+}
+
+const mCPF = (cpf) => {
+    cpf=cpf.replace(/\D/g,"")
+    cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2")
+    cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2")
+    cpf=cpf.replace(/(\d{3})(\d{1,2})$/,"$1-$2")
+    return cpf
+}

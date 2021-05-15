@@ -5,7 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itaú - Bankline</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="navlogo">
+                <img src="assets/img/logo-itau-varejo-desktop.webp" alt="ITAÚ">
+            </div>
+            <div class="navmenu">
+                <ul>
+                    <li><a href="/">cadastro</a></li>
+                    <li><a href="/">lançamentos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container-main">
+        <section class="form-cadastro">
+            <div class="cabecalho-cadastro">
+                <picture>
+                    <svg style="width:50px;height:50px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4M15,5.9C16.16,5.9 17.1,6.84 17.1,8C17.1,9.16 16.16,10.1 15,10.1A2.1,2.1 0 0,1 12.9,8A2.1,2.1 0 0,1 15,5.9M4,7V10H1V12H4V15H6V12H9V10H6V7H4M15,13C12.33,13 7,14.33 7,17V20H23V17C23,14.33 17.67,13 15,13M15,14.9C17.97,14.9 21.1,16.36 21.1,17V18.1H8.9V17C8.9,16.36 12,14.9 15,14.9Z" />
+                    </svg>
+                </picture>
+                <h1>cadastro pessoal</h1>
+            </div>
+            <form action="/cadastro" method="POST">
+                <label for="nome">Nome</label>
+                    <input type="text" name="name" required>
+                <label for="telefone_fixo">Telefone Fixo</label>
+                    <input type="text" name="name">
+                <label for="nome">Telefone Celular</label>
+                    <input type="text" name="name" required>
+                <label for="CPF">CPF</label>
+                    <input id="cpf_digitado" type="text" class="form-control" maxlength="14" onkeydown="javascript: fMasc( this, mCPF );" placeholder="digite somente números" aria-describedby="sizing-addon1" required>
+                <label for="rg">RG</label>
+                    <input type="text" name="RG">
+                <label for="sexo">Sexo</label>
+                    <select name="sexo">
+                        <option value="0">-</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="masculino">Feminino</option>
+                    </select>
+                <label for="cep">CEP</label>
+                        <input id="cep" type="text"/>
+                <label for="logradouro">Logradouro</label>
+                        <input id="logradouro" type="text" required/>
+                <label for="numero">Número</label>
+                        <input id="numero" type="text" required/>
+                <label for="complemento">Complemento</label>
+                        <input id="complemento" type="text"/>
+                <label for="bairro">Bairro</label>
+                        <input id="bairro" type="text" required/>
+                <label for="uf">Estado</label>
+                        <select id="uf">
+                            <option value="AC">-</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                <div class="button-form">
+                    <button type="reset">limpar</button>
+                    <button type="submit">cadastrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <script src="assets/js/validarCPF.js"></script>
 </body>
 </html>
