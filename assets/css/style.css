@@ -1,0 +1,225 @@
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+
+*, body {
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #EC7000;
+    width: 100%;
+    height: 90px;
+}
+
+.navlogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navlogo img {
+    max-height: 70px;
+}
+
+.container-main {
+    width: 100%;
+    padding-bottom: 20px;
+    background: #efe9e5;
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cabecalho-cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.cabecalho-cadastro svg {
+    color: #EC7000;
+}
+
+.cabecalho-cadastro h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #EC7000;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.form-cadastro form {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 500px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+}
+
+.form-cadastro input {
+    -webkit-border-radius:0;
+    border-radius: 0;
+    border: gray solid 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 500px;
+}
+
+.form-cadastro select {
+    -webkit-border-radius:0;
+    border-radius: 0;
+    border: gray solid 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 500px;
+}
+
+.form-cadastro label {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: rgb(65, 65, 65);
+}
+
+.form-cadastro button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: white;
+    background: #EC7000;
+    margin: 10px 5px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+
+.form-cadastro button:hover {
+    background-color: #df700f;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #706A66;
+}
+
+footer p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: 600;        
+}
+
+
+@media screen and (max-width: 900px) {
+    .container-main {
+        width: 100%;
+        padding-bottom: 20px;
+        background: #efe9e5;
+    }
+
+    .form-cadastro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cabecalho-cadastro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .cabecalho-cadastro h1 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        color: #EC7000;
+    }
+
+    .cabecalho-cadastro svg {
+        color: #EC7000;
+    }
+
+    .form-cadastro form {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        margin-top: 10px;
+        padding-top: 20px;
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    }
+
+    .form-cadastro input {
+        width: 300px;
+    }
+
+    .form-cadastro select {
+        width: 300px;
+    }
+
+    .form-cadastro label {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        color: rgb(65, 65, 65);
+    }
+
+    .button-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .button-form button {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        color: white;
+        background: #EC7000;
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+        border: none;
+        border-radius: 2px;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        background: #706A66;
+    }
+
+    footer p {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        font-weight: 600;        
+    }
+}
+
