@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itaú - Bankline</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 </head>
 <body>
     <header>
@@ -28,21 +27,21 @@
             </div>
             <form action="#" method="POST" name="formulario">
                 <label for="nome">Nome</label>
-                    <input type="text" name="name" required>
+                        <input type="text" name="name" required>
                 <label for="TELEFONE FIXO">Telefone Fixo</label>
-                    <input type="text" name="tel_fixo" maxlength="14" onKeyPress="MascaraGenerica(this, 'TELEFONE FIXO');">
+                        <input id="tel_fixo" type="text" name="tel_fixo" maxlength="14" onKeyPress="MascaraGenerica(this, 'TELEFONE FIXO');">
                 <label for="TELEFONE CELULAR">Telefone Celular</label>
-                    <input type="text" name="tel_cel" maxlength="15" onKeyPress="MascaraGenerica(this, 'TELEFONE CELULAR');" required>
+                        <input id="tel_cel" type="text" name="tel_cel" maxlength="15" onKeyPress="MascaraGenerica(this, 'TELEFONE CELULAR');" required>
                 <label for="CPF">CPF</label>
-                    <input id="cpf_digitado" type="text" class="form-control" maxlength="14" onkeydown="javascript: fMasc( this, mCPF );" aria-describedby="sizing-addon1" required>
+                        <input id="cpf_digitado" type="text" class="form-control" maxlength="14" onkeydown="javascript: fMasc( this, mCPF );" aria-describedby="sizing-addon1" required>
                 <label for="rg">RG</label>
-                    <input type="text" name="RG">
+                        <input id="rg" type="text" name="RG">
                 <label for="sexo">Sexo</label>
-                    <select name="sexo">
-                        <option value="0">-</option>
-                        <option value="masculino">Masculino</option>
-                        <option value="masculino">Feminino</option>
-                    </select>
+                        <select name="sexo">
+                            <option value="0">-</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="masculino">Feminino</option>
+                        </select>
                 <label for="cep">CEP</label>
                         <input id="cep" onKeyPress="MascaraGenerica(this, 'CEP');" maxlength="10" type="text"/>
                 <label for="logradouro">Endereço</label>

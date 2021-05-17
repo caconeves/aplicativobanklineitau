@@ -1,3 +1,4 @@
+//lógica para identificar se o CPF é válido.
 const validaCPF = (cpf) => {
     console.log(cpf.length);
     if (cpf.length != 11) {
@@ -37,6 +38,7 @@ const validaCPF = (cpf) => {
     }
 }
 
+//validação do CPF
 const validacao = () => {
     console.log("Iniciando validação CPF");
     document.getElementById('success').style.display = 'none';
